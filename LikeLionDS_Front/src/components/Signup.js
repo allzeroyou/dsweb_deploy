@@ -33,7 +33,7 @@ const Signup = () => {
       inputEmail,
       inputPhone,
     );
-    axios.post('http://3.39.123.152/auth', send_param).then((response) => {
+    axios.post('http://3.39.123.152:3001/auth', send_param).then((response) => {
       console.log(response.data);
       if (response.data === 'SUCCESS') {
         console.log('회원가입 성공');
