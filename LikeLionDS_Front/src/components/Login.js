@@ -22,7 +22,7 @@ const Login = () => {
 
   const LoginHandle = () => {
     axios
-      .post('http://3.39.123.152:3001/auth/login', send_param)
+      .post('http://52.79.129.95:3001/auth/login', send_param)
       .then((response) => {
         console.log(response.data);
         console.log(response.data.userID);
